@@ -9,7 +9,7 @@ Supongamos que queremos que un usuario introduzca números en una lista a travé
 
 > Ejemplo :
 
-''' python
+``` python
 lista = []
 while True:
     numero = int(input('Añade número: '))
@@ -17,24 +17,24 @@ while True:
         break
     lista.append(numero)
 print(lista)
-'''
+```
 
 ## Con el operador morsa, podemos reducir el código a lo siguiente:
 
-'''python
+```python
 lista = []
 while (numero := int(input('Añade número: '))) != 0:
     lista.append(numero)
 print(lista)
-'''
+```
 Ambos códigos producirán la misma lista [4, 3, 6, 2, 9] para las siguientes entradas de datos: 4, 3, 6, 2, 9, 0.
 ## Asignaciones múltiples en una línea:
  También podemos hacer varias asignaciones en la misma línea de código.
 
  > Ejemplo :
-'''python
+```python
 
  (n_cuadrado := (n := 10) * n)
 print(n, n_cuadrado)  # Devuelve 10 y 100
-'''
+```
 ### En resumen, el uso del operador morsa debe limitarse a los casos en los que la legibilidad del código mejore. Sin embargo, ten en cuenta que no es compatible con versiones de Python anteriores a la 3.81234.
